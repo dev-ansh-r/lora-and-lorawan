@@ -21,3 +21,4 @@ sudo raspi-config
 ## Setup the gateway
  
 
+![gateway](https://user-images.githubusercontent.com/59604988/184530318-55e307b9-1a6d-4d8f-9cd4-6e9a7759610d.png)
