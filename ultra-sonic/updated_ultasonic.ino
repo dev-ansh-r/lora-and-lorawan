@@ -38,6 +38,7 @@ void loop(){
     distance = duration * (0.034/2);
     String str1 = String(distance, 3);
     if(distance < 5){
+        Serial.println(str1);
       
    if(Serial.available()){
        loraserial.println("AT+MSG=" +str1);      
