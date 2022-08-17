@@ -20,7 +20,7 @@ void setup(){
 void loop(){
     if(Serial.available()){
         char c = 10;
-        loraserial.println("AT+MSG="+ c);
+        loraserial.println("AT+MSG=" + c);
         Serial.println(loraserial.write(c));
     }
     if(loraserial.available()){
