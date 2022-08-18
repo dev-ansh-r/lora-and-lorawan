@@ -5,9 +5,9 @@ const int flexPinone=A1;
 
 // Change these constants according to your project's design
 const float VCC = 5;      // voltage at Ardunio 5V line
-const float R_DIV = 47000.0;  // resistor used to create a voltage divider
-const float flatResistance = 25000.0; // resistance when flat
-const float bendResistance = 100000.0;  // resistance at 90 deg
+const float R_DIV = 10000.0;  // resistor used to create a voltage divider
+const float flatResistance = 16700.0; // resistance when flat
+const float bendResistance = 18200.0;  // resistance at 90 deg
 
 void setup() {
   Serial.begin(9600);
