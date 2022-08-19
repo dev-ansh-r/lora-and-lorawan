@@ -9,6 +9,7 @@ int trig = 10;
 int echo = 11;
 float distance;
 long duration;
+String str1;
 char buffer[5];
 
 void setup() {
@@ -36,10 +37,9 @@ void loop(){
     duration = pulseIn(echo, HIGH);
     delayMicroseconds(2);
     distance = duration * (0.034/2);
-    String str1 = String(distance, 3);
+    str1 = String(distance, 3);
     if(distance < 5){
-        Serial.println(str1);
-      
+      loraserial.println("AT+MSG=" +str1);
    if(Serial.available()){
        loraserial.println("AT+MSG=" +str1);      
       
