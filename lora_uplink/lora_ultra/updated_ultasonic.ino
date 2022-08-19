@@ -30,7 +30,7 @@ void loop(){
     delayMicroseconds(2);
     digitalWrite(trig, HIGH);
     delayMicroseconds(2);
-    digitalWrite(trig, LOW);
+    digitalWrite(trig, LOW);git 
 
 // calculate distance and send to lora serial
     duration = pulseIn(echo, HIGH);
