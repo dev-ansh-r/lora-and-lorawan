@@ -19,6 +19,7 @@ int echo = 11;
 float distance;
 long duration;
 String str1;
+String str2;
 
 void setup() {
     pinMode(trig, OUTPUT);
@@ -50,7 +51,8 @@ void loop(){
         Serial.println(str1);
       
    if(Serial.available()){
-       loraserial.println("AT+MSG=" +str1);      
+       loraserial.println("AT+MSG=" +str1);
+       loraserial.println("AT+MSG=" +str2);    
       
    }
     if(loraserial.available()){
@@ -67,6 +69,7 @@ void loop(){
 
   // Use the calculated resistance to estimate the sensor's bend angle:
   float angle = map(Rflex, flatResistance, bendResistance, 0, 90.0);
+  str2 = String(angle, 3);
   Serial.println("Bend: " + String(angle) + " degrees");
   Serial.println();
 
