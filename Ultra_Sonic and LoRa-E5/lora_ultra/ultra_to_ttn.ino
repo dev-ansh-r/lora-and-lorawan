@@ -43,7 +43,7 @@ void loop(){
 
 
     if(Serial.available()){
-
+        char c = Serial.read();
         loraserial.println("AT+MSG=" + c);
         Serial.println(loraserial.write(c));
     }
@@ -53,3 +53,5 @@ void loop(){
         Serial.println(c);
     }
 }
+
+/* Author : Devansh and Bhuvaneshwari*/
