@@ -79,3 +79,9 @@ String sendATcommand(const char *toSend, unsigned long milliseconds) {
 //  Serial.print("Add the app eui");
 //  sendATcommand("AT+KEY=APPKEY,"7EE269E9615C462D915AE2BBA38A221E"", 2000);
 //Serial.print("Add the APP key");
+
+
+
+
+
+/* Author : Devansh and Bhuvaneshwari*/

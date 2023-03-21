@@ -22,3 +22,5 @@ void loop()
   Serial.println(flexValuetwo);
   delay(1000);
 } 
+
+/* Author : Devansh and Bhuvaneshwari*/

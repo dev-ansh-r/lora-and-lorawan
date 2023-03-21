@@ -42,14 +42,14 @@ void loop(){
       loraserial.println("AT+MSG=" +str1);
    if(Serial.available()){
        loraserial.println("AT+MSG=" +str1);      
-      
    }
     if(loraserial.available()){
         Serial.println(loraserial.readString());
         delay(50);
-
     }
-      
-      
   }
 }
+
+
+
+/* Author : Devansh and Bhuvaneshwari*/
